@@ -60,7 +60,7 @@ function handleGuess(element, index) {
     correctGuesses++;
     roundSolved = true;
     element.classList.add('correct');
-    feedbackEl.textContent = 'Correct! Starting a new round...';
+    feedbackEl.textContent = 'Korrekt! Starter en ny runde...';
     feedbackEl.className = 'feedback correct-text';
     statCorrectEl.textContent = correctGuesses;
 
@@ -70,7 +70,7 @@ function handleGuess(element, index) {
       newRound();
     }, 900);
   } else {
-    feedbackEl.textContent = 'Wrong, try again.';
+    feedbackEl.textContent = 'Forkert, prøv igen.';
     feedbackEl.className = 'feedback wrong-text';
     element.classList.add('hidden');
   }
